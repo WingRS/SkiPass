@@ -37,6 +37,7 @@ public class EntityTest {
         assertTrue(tourniquet.pass(skiPass));
         skiPassFactory.banSkiPass(skiPass);
         assertFalse(tourniquet.pass(skiPass));
+        assertTrue(!customer.addSkipass(skiPass));
     }
 
 
